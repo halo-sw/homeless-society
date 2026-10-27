@@ -76,8 +76,8 @@
     },
     {
       "path": "docs/architecture.md",
-      "museBatch": "01",
-      "sha256": "ed96d92eba0ee570dcc3595e6ccb1d1f197ef81099a18a4e5685d1cb090a291f"
+      "museBatch": "11",
+      "sha256": "54c33835f92c01c584d95a91d74b9dcf7593692baadf96377fc6ce154b2301f8"
     },
     {
       "path": "docs/data-sources.md",
@@ -385,9 +385,25 @@
       ],
       "estimatedUsd": 0.02378725,
       "applied": true
+    },
+    {
+      "batch": "11",
+      "model": "muse-spark-1.3",
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 18075,
+          "cached_tokens": 0,
+          "output_tokens": 835,
+          "reasoning_tokens": 325,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.0261425,
+      "applied": true
     }
   ],
-  "estimatedAuthoringUsd": 1.63141625,
+  "estimatedAuthoringUsd": 1.65755875,
   "checks": {
     "build": "passed",
     "unitIntegrationTests": 45,
