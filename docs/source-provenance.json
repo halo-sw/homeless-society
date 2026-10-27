@@ -1,7 +1,7 @@
 {
   "model": "muse-spark-1.3",
-  "checkedAt": "2026-10-27 Asia/Seoul",
-  "method": "Exact byte comparison against Muse terminal file bundles and exact Muse-authored replacements; envelope/path metadata normalized only. npm generated package-lock.json. Codex orchestrated, reviewed, materialized, tested and ran Git. CI template relocated without changing contents; original unpublished commits retained on local/with-ci-workflow.",
+  "checkedAt": "2026-10-27T10:32:35.487619+00:00",
+  "method": "Exact byte comparison against actual Meta Muse Spark 1.3 terminal file bundles and exact Muse-authored replacements. Envelope-only normalization noted per batch. Product code, tests, configuration, and docs are Muse-authored; Codex orchestrated research, instructions, review, file materialization, installations, testing, screenshots and Git. npm generated package-lock.json. This manifest is machine-generated metadata. CI template retains previously verified Muse-authored bytes.",
   "sourceFiles": [
     {
       "path": ".env.example",
@@ -20,23 +20,28 @@
     },
     {
       "path": ".gitignore",
-      "museBatch": "10",
-      "sha256": "c166592309fdc6bd7d43a44dc0a518daff6b1236b29b0200d3214567b7b319fd"
+      "museBatch": "15",
+      "sha256": "2222340ba9cf78c3dad23638e91c7e3e4ff7cebd4cc4c5d8d15a0954f587e065"
     },
     {
       "path": ".impeccable.md",
-      "museBatch": "01",
-      "sha256": "44e2a1a026d7978b40acf26a84472e5e158165d6a8fb197b50d76bb91b03ba8d"
+      "museBatch": "15",
+      "sha256": "6bd2b7e268fdeb3e9e1b7755496f6d710a913e68139092e878d0c76da4bf5518"
+    },
+    {
+      "path": ".vercelignore",
+      "museBatch": "15",
+      "sha256": "d5e26a749dcac89d8cdc80762fd544d2b16ed2de8dd8bc08e333d51242a7a811"
     },
     {
       "path": "AGENTS.md",
-      "museBatch": "01",
-      "sha256": "8c011c15cca602c6cc7f6c63dee3c02e2b8e841d1fbcd65cbf1909b6148a719f"
+      "museBatch": "15",
+      "sha256": "439552ce9b0d71ee68cdd36a355b8b1becf40c25dd0475aa88457b95564ad81d"
     },
     {
       "path": "CONTRIBUTING.md",
-      "museBatch": "14",
-      "sha256": "ef5c1cd952d4e6d9901c023463208ea20254ad7a4be695e70276e11fb30e6e07"
+      "museBatch": "22",
+      "sha256": "f714392996f51411616375d293df6393dd917d46f7ed3d53d0f9fcd40bba198b"
     },
     {
       "path": "LICENSE",
@@ -45,18 +50,18 @@
     },
     {
       "path": "README.en.md",
-      "museBatch": "13",
-      "sha256": "fd010acac529f896fb215ac926b181caeb955f0b9e024b926a4dc038838cd9a8"
+      "museBatch": "24",
+      "sha256": "14bf405710698841e7288e4ea21a185d3c71806838b09e04508ab27f0b0bf7b0"
     },
     {
       "path": "README.ko.md",
-      "museBatch": "13",
-      "sha256": "dc3ca9fc2e4846a91fbd5fb53b0b790417ebcfb6d2bd617984459335a543f9ac"
+      "museBatch": "25",
+      "sha256": "ddb85ab9d395ba33396fbcaf7257427dfaf0d21b2a2783f570dc2e1e411c5e32"
     },
     {
       "path": "README.md",
-      "museBatch": "14",
-      "sha256": "df9f7696aa84eae8ab5e5f5911643fec09a1ad919010dfc8d9507020b86577a5"
+      "museBatch": "25",
+      "sha256": "2340df9dfe36389a275ac3ec5f6cca93d52410b2ca016d55439d04bfe7671991"
     },
     {
       "path": "SECURITY.md",
@@ -64,24 +69,39 @@
       "sha256": "b2a15d2442aede618b0f22a4e277a9b42394c9ca6351fd49c08d65dc934910ce"
     },
     {
+      "path": "api/housing.ts",
+      "museBatch": "16",
+      "sha256": "7f5805337db95466ba4e6620378506de6c4d9af133f27ee59ea8b76b81678f8d"
+    },
+    {
       "path": "docs/BACKEND.md",
-      "museBatch": "07",
-      "sha256": "5325b108e01a683d12a73f78d6b0489c85f1036bd849b63c618e840a0cd2aeed"
+      "museBatch": "25",
+      "sha256": "2e923ea5e3e0a160c672d973bbe3f51d11f3000cd4ee383bf03510e08ca02dcc"
+    },
+    {
+      "path": "docs/DATA_SOURCES.md",
+      "museBatch": "22",
+      "sha256": "1172c325469922cbaa6c574e928a12e0eafc90ef813cba8aed0069ac3f424e2a"
+    },
+    {
+      "path": "docs/DESIGN_ROUNDS.md",
+      "museBatch": "25",
+      "sha256": "28bbfebba325106d9b4dec5e455fcbbcdc8eb6ed1b784808cd39a58482e25249"
     },
     {
       "path": "docs/GETTING_STARTED.ko.md",
-      "museBatch": "14",
-      "sha256": "9963bc34e658dfb1d48e369d5e995be3acc01935b386e0fb0959a64229bd2d51"
+      "museBatch": "25",
+      "sha256": "08f1d7bec8950997381209e37ade7a8ab153a78de79e5ccbdfb12f292b5df8c8"
     },
     {
       "path": "docs/PROVENANCE.md",
-      "museBatch": "06",
-      "sha256": "e783a96c03d712a961d9aecb93f08af82b0df0521cc6fdea85b3b4a02137c641"
+      "museBatch": "24",
+      "sha256": "95442ffca67ae3397b4a14eae91745692b901df049ca4193e71ead30081d2497"
     },
     {
       "path": "docs/architecture.md",
-      "museBatch": "11",
-      "sha256": "54c33835f92c01c584d95a91d74b9dcf7593692baadf96377fc6ce154b2301f8"
+      "museBatch": "25",
+      "sha256": "fa7d1ae66854d063909ccaffdfc206ad7d5da89cf67a627a426c7d28d1b97d8f"
     },
     {
       "path": "docs/ci-template.yml",
@@ -91,23 +111,28 @@
     },
     {
       "path": "docs/data-sources.md",
-      "museBatch": "01",
-      "sha256": "80e5355f92f2a8d815b2ed6cfe35260e38983d4e5f1e770854461cd800b97d7d"
+      "museBatch": "22",
+      "sha256": "ce33c3231502c3aeea62592a886438182be8dd8f6bf91aaebfa253fce56d0b67"
     },
     {
       "path": "index.html",
-      "museBatch": "01",
-      "sha256": "449a67cd4bebc36b6413670365f12f8781214e64ac23e4324b5dd8795ff360dd"
+      "museBatch": "15",
+      "sha256": "e6f9beeb5ea81b6ab479857e783f1d63d115bf17f4096649565b92419e77749f"
     },
     {
       "path": "package.json",
-      "museBatch": "02",
-      "sha256": "c547b717804a8b8685dbe563a2aac0c861c9139a0fdcfcfe04fb0be5d67e7d88"
+      "museBatch": "17",
+      "sha256": "576950cc3314c4f9ed337aa3f8be6750cab9f6d7ceefed9df6db29c8dc8ddf5a"
     },
     {
       "path": "playwright.config.ts",
-      "museBatch": "07",
+      "museBatch": "15",
       "sha256": "6dfc5cf25e1ad2f32f6b0fedf9b9913e9b8b16f21ac754d1e789fbd130aadeca"
+    },
+    {
+      "path": "playwright.public.config.ts",
+      "museBatch": "15",
+      "sha256": "5cb6b3ac2add5fb3f96b670bc41dcdc72478f9e37bac6ba2edd3e9bbe4311836"
     },
     {
       "path": "public/assets/favicon.svg",
@@ -116,78 +141,128 @@
     },
     {
       "path": "server/budget.ts",
-      "museBatch": "04",
-      "sha256": "0b8ff70663d898102818802c892f8441575c46cdbc2378557289589e0d06e1e9"
+      "museBatch": "15",
+      "sha256": "1687f1d207e23905298c620a0973b27ba591808b2e7a1e872527cda8c434be8e"
+    },
+    {
+      "path": "server/housing.ts",
+      "museBatch": "17",
+      "sha256": "e79c506453356a4b3e2572fcfd8bd28501cae5494ab0146dde7e58ee412b517b"
     },
     {
       "path": "server/muse.ts",
-      "museBatch": "07",
-      "sha256": "6a14f4473190262713165ffb6d0fe54a02e8dcc315f70cb431961729699bf747"
+      "museBatch": "15",
+      "sha256": "3b78687113f170864b4ea993d88328e2ca36ebea260bc76232fd3f11594e2c35"
     },
     {
       "path": "server/server.ts",
-      "museBatch": "06",
-      "sha256": "e35a5ace205f646d5c7a67d603129e548ebe999ca00460136fbb9484aacf23ff"
+      "museBatch": "16",
+      "sha256": "bdd5d28bfbfeffd19cc4faa0d4e340a83b96fc4ee25f097aa0c05fe37064b3fd"
     },
     {
       "path": "server/sessionValidate.ts",
-      "museBatch": "04",
-      "sha256": "57d3e7cf8c684b8faadeff76af080b001cc1bd990aa4bd4972744930f4814cf7"
+      "museBatch": "18",
+      "sha256": "2d5498d02edc8ea4be25fdaba3e05fccae54d690ac33b204442323dd99484250"
     },
     {
       "path": "src/App.tsx",
-      "museBatch": "07",
-      "sha256": "b7654f7c3c483f5a2fe2a5241340aff9a13c5d2a1fa92e9295111531b26b8546"
+      "museBatch": "23",
+      "sha256": "284a9131bbd694b931e6b74532ef56544362b4140ea46a0d578818d02669f3d4"
+    },
+    {
+      "path": "src/astryx-themes.ts",
+      "museBatch": "17",
+      "sha256": "8f032248b57eb7a2a500376de9b938f26e5408acd39da8571e38ebb4b4db8589"
+    },
+    {
+      "path": "src/components/DistrictSearch.tsx",
+      "museBatch": "19",
+      "sha256": "f6bd373f1990f37eaa8111574c53474f7cfdf0d176e4d619eb234d59a34eb973"
+    },
+    {
+      "path": "src/components/FactorPanel.tsx",
+      "museBatch": "18",
+      "sha256": "b513e4f63618051e0957cd97c56b6af48189c47312a5d6d8a6f1a84e55f1a212"
     },
     {
       "path": "src/components/MapView.tsx",
-      "museBatch": "06",
-      "sha256": "3194f5ee7ffa91a28c485ffa8a5904c72fb5614347b63af0dc47062ec26bfc1e"
+      "museBatch": "16",
+      "sha256": "0aff38006844a9d1f2748b810e8da998c1792a7810bbbfb2e61a268ba0739883"
     },
     {
       "path": "src/components/MusePanel.tsx",
-      "museBatch": "07",
-      "sha256": "9a3c81f138a1d2a04e25575bfbbdaa309640f23fa85217fa579074a98ea44b64"
+      "museBatch": "16",
+      "sha256": "e8b92b2f03544ebb081e47731e4be91257e1be10eea38646b54e3d8c6e0c165c"
+    },
+    {
+      "path": "src/components/NeighborhoodScene.tsx",
+      "museBatch": "18",
+      "sha256": "97e1341d75f3b80a6ab7c088fc9c5ab4824466b23c37e941eb3689b7212e1084"
     },
     {
       "path": "src/components/Prep.tsx",
-      "museBatch": "07",
-      "sha256": "0dfdde14a3559bf0f4f49cd95180199e2376420e1fc4226e06f0cd3315fdc468"
+      "museBatch": "24",
+      "sha256": "c65eaf14d5118b6729a09a82fc8691132c65d937577ca13ca5d69471624b2381"
+    },
+    {
+      "path": "src/components/ScenarioLab.tsx",
+      "museBatch": "19",
+      "sha256": "af532f40b683d954a6cb37b3700af1ef7faca888cabbbacc55506ec2a3a27c31"
     },
     {
       "path": "src/components/SessionImport.tsx",
-      "museBatch": "07",
-      "sha256": "4adb59bbdaf5e59fb6b9a563e3ef7dd38e2cddcef03c2cb8e9c0336e37e8838b"
+      "museBatch": "15",
+      "sha256": "7419050cb96a98a2f88723ea420c4ff6c90e40fb6bd447e5f7ddc966692c0c4a"
     },
     {
       "path": "src/components/Summary.tsx",
-      "museBatch": "09",
-      "sha256": "09d065ce7f2aaa8af23788ccb5ea6f9efaa74cdab632808ca40aa934bb123e9c"
+      "museBatch": "24",
+      "sha256": "3be5aace0bb01c55c898bfaebc5a8c9e55c20efe7656aec4411a16b099596ea3"
     },
     {
       "path": "src/components/Visit.tsx",
-      "museBatch": "06",
-      "sha256": "078a095ce101ff43d58eb884945f03f46b372595486d663141bd507d78033c81"
+      "museBatch": "19",
+      "sha256": "4cd7932c6e393031eca6407a9050375f467a0b89d6e26285e4e89ece5f33b6bb"
     },
     {
       "path": "src/data/demo.ts",
-      "museBatch": "03",
-      "sha256": "befa9a956ad3cbe3cf93c1397b54c9538c8877cefa836feffc798fd3769b977f"
+      "museBatch": "15",
+      "sha256": "426ac325f46c9c101bdf89053ed3a0550d0d6212e5c00ce259c59b50b1cd3526"
+    },
+    {
+      "path": "src/domain/housing.ts",
+      "museBatch": "16",
+      "sha256": "dfeae3e12a5b297692ff98fb698ce2214c68be5ccc79d86b5ad81b45b82920ce"
     },
     {
       "path": "src/domain/session.ts",
-      "museBatch": "06",
-      "sha256": "b22c6a21cc260c58470252a0edaf2f4ba8a495f1ecb70ee632305bfde2878e52"
+      "museBatch": "19",
+      "sha256": "abb9f304791985ef59231bf7426a78d1693243260846607d8027807bd0bee6e7"
+    },
+    {
+      "path": "src/domain/simulation.ts",
+      "museBatch": "16",
+      "sha256": "c27b0fd67e2ad97d5a90b03661b14d86d7fb0d900f9321e057d3356eb7f67afc"
+    },
+    {
+      "path": "src/lib/api.ts",
+      "museBatch": "16",
+      "sha256": "c785fceca6d91fdc8dbdaaa5ca7dc0e4fee1d00a16d84f65dbdf2aca049abfbb"
+    },
+    {
+      "path": "src/lib/housingApi.ts",
+      "museBatch": "16",
+      "sha256": "6aa671c53dc91cb77baa7c8893d9879c616518800178cb6c6d09f9c62b81a405"
     },
     {
       "path": "src/main.tsx",
-      "museBatch": "01",
-      "sha256": "6c4b44f0162d920a4772d3f2836d5e66bcb53c26365bda98719e0b929f067339"
+      "museBatch": "17",
+      "sha256": "431f4f4771964f450df5b2e49ccf7fb654adddfe005ac3957a325dedb9194e75"
     },
     {
       "path": "src/styles/app.css",
-      "museBatch": "07",
-      "sha256": "819c869972ca0555cf6ff4d6d2199fe42ac393a74f03bc3b1f5ffcabf3315b3b"
+      "museBatch": "24",
+      "sha256": "0a5e58cfcccf2b0b1242d152fcf91a8b01dafb7fc98b0eb1817e39410abe1310"
     },
     {
       "path": "tests/budget.test.ts",
@@ -196,33 +271,48 @@
     },
     {
       "path": "tests/e2e.spec.ts",
-      "museBatch": "08",
-      "sha256": "113fbbe5213e0891049b61c57519f101124b285ec01d47491eab7acda369ecaf"
+      "museBatch": "19",
+      "sha256": "e9cb0dadf38b8227fbc55eb6109c5fee306a1943ef2d2855f458117095638071"
+    },
+    {
+      "path": "tests/housing.test.ts",
+      "museBatch": "18",
+      "sha256": "72b4520c39995beb8c305e025643621f1f4b64320feec5b43cd6e2026303e0b8"
     },
     {
       "path": "tests/muse.test.ts",
-      "museBatch": "07",
-      "sha256": "dbbd739c5837e1bd33698e91cd5192fcea464266a0b06f317dc8a17465046699"
+      "museBatch": "15",
+      "sha256": "2a1c0931fd4b2d2be618fa09fe6cd8c14c9a10b6d2ba2be63c6b5d3896eb76ff"
+    },
+    {
+      "path": "tests/public.spec.ts",
+      "museBatch": "24",
+      "sha256": "dfc7930b628f21ab71353bc2f9075bd478a07b4bca1add7cf607028880708796"
     },
     {
       "path": "tests/server.test.ts",
-      "museBatch": "04",
-      "sha256": "de8ea1bcd77132f497ea9cc694fd65e95b73db7e5a6611020aa102e4bae77263"
+      "museBatch": "15",
+      "sha256": "1ca7723b72efeaafcf0743835b5f8ec3e711c709aca229e7a6bd70f5df28ae11"
     },
     {
       "path": "tests/session.test.ts",
-      "museBatch": "04",
-      "sha256": "86fc0e78b62f0afb6bfa6283ae15e5204ca62afdb86a938e0d6b444b722ce885"
+      "museBatch": "15",
+      "sha256": "1b99f1102c4a2616e3244f6377398ac211baafa066761593f0085393f87a4669"
     },
     {
       "path": "tests/sessionValidate.test.ts",
-      "museBatch": "04",
-      "sha256": "4be869a5ec072a3f1a0804d19df9c7f7ca69a27866fdbf5668ef4d91360ed523"
+      "museBatch": "15",
+      "sha256": "00c9cd000c5adb5e10f73adb87241e7bdb2f5d5d33b934cd30aa3a513a985cba"
+    },
+    {
+      "path": "tests/simulation.test.ts",
+      "museBatch": "15",
+      "sha256": "1d835ac5097018fc1c1a73c7e56c7d38fb307be42b40a7bc280956b34874839d"
     },
     {
       "path": "tsconfig.json",
-      "museBatch": "02",
-      "sha256": "d52d07e1b7150a7ca7ca532c7641e494b648ea9f3e206ac179a2f1d169c7f7f1"
+      "museBatch": "19",
+      "sha256": "d8dd0c43ddacb655acf29b9d523497ae8d15061bdafe0ef126cf97d03a7c3481"
     },
     {
       "path": "tsconfig.server.json",
@@ -230,9 +320,14 @@
       "sha256": "a543c29820afe085ea2ed3f48de891442766d36fc57b64c63ef09a3df5d493d5"
     },
     {
+      "path": "vercel.json",
+      "museBatch": "16",
+      "sha256": "c16e855c3e061a2a9589f0b0635d9c3de3b4ac69b6c9c050b8471d0988c33a54"
+    },
+    {
       "path": "vite.config.ts",
-      "museBatch": "02",
-      "sha256": "717d3db2ff9122e7e3e394922cf95a257515cde429a39733b7911f181d252767"
+      "museBatch": "16",
+      "sha256": "40866a6f8d9ff39f6bae4a9fc40850cd3160aee7c396cea6bd1058e2d5b13299"
     }
   ],
   "batches": [
@@ -461,46 +556,254 @@
       "estimatedUsd": 0.05719725,
       "applied": true,
       "note": "Exact Muse-authored replacements applied to batch 13 documents; full derived bundles preserved privately."
+    },
+    {
+      "batch": "15",
+      "model": "muse-spark-1.3",
+      "applied": true,
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 73816,
+          "cached_tokens": 0,
+          "output_tokens": 79488,
+          "reasoning_tokens": 12883,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.430094
+    },
+    {
+      "batch": "16",
+      "model": "muse-spark-1.3",
+      "applied": true,
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 90335,
+          "cached_tokens": 0,
+          "output_tokens": 80714,
+          "reasoning_tokens": 11252,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.45595325,
+      "note": "Non-JSON prose outside file content removed to parse the envelope; file content bytes unchanged."
+    },
+    {
+      "batch": "17",
+      "model": "muse-spark-1.3",
+      "applied": true,
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 37238,
+          "cached_tokens": 0,
+          "output_tokens": 16904,
+          "reasoning_tokens": 10105,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.1183895
+    },
+    {
+      "batch": "18",
+      "model": "muse-spark-1.3",
+      "applied": true,
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 77714,
+          "cached_tokens": 0,
+          "output_tokens": 64676,
+          "reasoning_tokens": 11061,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.3720155
+    },
+    {
+      "batch": "19",
+      "model": "muse-spark-1.3",
+      "applied": true,
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 62651,
+          "cached_tokens": 0,
+          "output_tokens": 11774,
+          "reasoning_tokens": 3757,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.12835325
+    },
+    {
+      "batch": "20",
+      "model": "muse-spark-1.3",
+      "applied": false,
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 17799,
+          "cached_tokens": 0,
+          "output_tokens": 144,
+          "reasoning_tokens": 103,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.02286075,
+      "note": "No source applied: Muse requested an unavailable read tool and hit the model-step limit. Usage included."
+    },
+    {
+      "batch": "21",
+      "model": "muse-spark-1.3",
+      "applied": true,
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 22778,
+          "cached_tokens": 0,
+          "output_tokens": 812,
+          "reasoning_tokens": 757,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.0319235,
+      "note": "Replacement array wrapped as object; replacement bytes unchanged."
+    },
+    {
+      "batch": "22",
+      "model": "muse-spark-1.3",
+      "applied": true,
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 22566,
+          "cached_tokens": 0,
+          "output_tokens": 12172,
+          "reasoning_tokens": 3316,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.0799385
+    },
+    {
+      "batch": "23",
+      "model": "muse-spark-1.3",
+      "applied": true,
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 38723,
+          "cached_tokens": 0,
+          "output_tokens": 17636,
+          "reasoning_tokens": 12845,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.12335675
+    },
+    {
+      "batch": "24",
+      "model": "muse-spark-1.3",
+      "applied": true,
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 41328,
+          "cached_tokens": 0,
+          "output_tokens": 15669,
+          "reasoning_tokens": 11378,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.11825325
+    },
+    {
+      "batch": "25",
+      "model": "muse-spark-1.3",
+      "applied": true,
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 25121,
+          "cached_tokens": 0,
+          "output_tokens": 6611,
+          "reasoning_tokens": 4589,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.059498
     }
   ],
-  "estimatedAuthoringUsd": 1.849214,
+  "estimatedAuthoringUsd": 3.78985025,
   "checks": {
-    "build": "passed",
-    "unitIntegrationTests": 45,
-    "browserTests": 11,
-    "npmKnownVulnerabilities": 0
+    "localBuild": "passed",
+    "publicBuild": "passed",
+    "typecheck": "passed (frontend, local server, and Vercel API entry)",
+    "unitIntegrationTests": 65,
+    "localBrowserTests": 15,
+    "publicBrowserTests": 1,
+    "publicModelRequests": 0,
+    "publicRoundTrip": "passed: district, notes and per-home 900M/800M snapshots retained after export, clear and import",
+    "responsiveViewportWidths": [
+      1280,
+      390
+    ],
+    "npmKnownVulnerabilities": 0,
+    "liveHousingRead": "passed: Mapo apartment sales, 202609, 84 valid rows on 2026-10-27",
+    "gitDiffCheck": "passed",
+    "privatePathAndTokenScan": "passed for proposed tracked files",
+    "vercelDeployment": "pending project-space access; no hosted URL verified"
   },
   "limitations": [
-    "Kakao real-provider map/roadview not exercised without provider keys.",
-    "Satisfaction 9/10 is a design goal, not measured satisfaction.",
-    "GitHub OAuth login lacks workflow scope. CI configuration is included as an inactive docs/ci-template.yml; local checks passed, GitHub Actions not activated."
+    "The scene is fictional; it is not a geographic reconstruction of the selected district.",
+    "Only apartment sales were validated live; other asset endpoints may reject incompatible upstream rows.",
+    "Schools, title/claims, news and other factor evidence remain user-entered or manual references.",
+    "Future outputs are conditional calculations from user assumptions, not price forecasts.",
+    "Public mode uses prewritten Muse-authored prompts and makes no live model calls.",
+    "Vercel project-space access remains unavailable (403); deployment has not completed.",
+    "GitHub Actions workflow is an inactive docs/ci-template.yml.",
+    "Full accessibility certification and user-satisfaction research have not been performed."
   ],
   "capturedAssets": [
     {
       "path": "docs/images/prepare.png",
       "kind": "browser-screenshot",
-      "description": "Unedited screenshot of the fictional app demo, not real street view.",
-      "sha256": "1d7229b551be23e9dd257ce775df0390b20504e58ebd32acc9e38eace549d7c1"
+      "description": "Unedited browser capture of fictional scene and test data; not a real property or street-view image.",
+      "sha256": "88708943ad9b40c1a5839a881bef5e91dc683e0027b450bb9f842777a9005a34"
     },
     {
       "path": "docs/images/virtual-visit.png",
       "kind": "browser-screenshot",
-      "description": "Unedited screenshot of the fictional app demo, not real street view.",
-      "sha256": "94584fbcb1996e4dbcd37854dafd03e6bb23af46cbe5baa8c7a22bef8c818c19"
+      "description": "Unedited browser capture of fictional scene and test data; not a real property or street-view image.",
+      "sha256": "59388d2f1fe89a9c06d1d9b84a4439779ca8f718513fc684e5dd2c5e15e01d4a"
+    },
+    {
+      "path": "docs/images/scenario.png",
+      "kind": "browser-screenshot",
+      "description": "Unedited browser capture of fictional scene and test data; not a real property or street-view image.",
+      "sha256": "b43ea2697afd7dff32582a8cf2ab08e92af4b4e2ebd853ba7a00c5167d67733a"
     },
     {
       "path": "docs/images/compare.png",
       "kind": "browser-screenshot",
-      "description": "Unedited screenshot of the fictional app demo, not real street view.",
-      "sha256": "ab4d729544b5d1e103c9641cadcf9e6be05dd24c6268db5d7f4154fdbf5f2779"
+      "description": "Unedited browser capture of fictional scene and test data; not a real property or street-view image.",
+      "sha256": "795dc23c70f1127c53b39df12e11cd396964152a0e51a8215d2633ee440ac4cd"
     }
   ],
   "documentationChecks": {
-    "checkedAt": "2026-10-27 Asia/Seoul",
-    "documents": 5,
-    "relativeLinksAndImages": 47,
-    "originalScreenshots": 3,
-    "applicationSourcesUnchanged": true,
-    "testSuiteRerun": false
-  }
+    "checkedAt": "2026-10-27T10:32:35.487619+00:00",
+    "relativeLinksAndImages": 51,
+    "originalScreenshots": 4,
+    "missingRelativeTargets": 0
+  },
+  "generatedFiles": [
+    {
+      "path": "package-lock.json",
+      "generator": "npm",
+      "sha256": "a8daeddb947329d30905dfd1bd34c87684a4555f5d82214c769b55cc2d0765c4"
+    }
+  ]
 }

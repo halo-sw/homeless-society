@@ -1,41 +1,63 @@
-# Backend notes (Muse-only, muse-spark-1.3)
+# Backend notes
 
-Only Muse Spark 1.3 is allowed. No other AI calls or fallbacks.
+Local behavior and public static behavior are different. Read this before setting environment variables.
+
+## Local versus public
+
+- Local `npm run dev`: Vite plus Express together. Live housing proxy and optional local Muse assistant are available.
+- Local `npm start`: serves the built local app on port `3001`.
+- Public `npm run build:web`: static frontend in `dist/` plus `api/housing.ts` for Vercel. No `/api/muse` is exposed or called.
+- Public `npm run preview` on port `4173` previews only the static build. It does not run the serverless housing handler.
+- Vercel deployment is planned, but account selection and permissions are pending. No live public URL exists. Use Import Git Repository with `npm run build:web` and `dist/` output plus the `api/housing` function. Do not disable preview protection.
 
 ## Scripts
 
-- `npm run dev` runs Vite and the API together via `concurrently`.
-- `npm run dev:client` runs Vite only; `npm run dev:server` runs `tsx server/server.ts`.
+- `npm run dev` runs Vite and the API together with `concurrently`.
+- `npm run dev:client` runs Vite only.
+- `npm run dev:server` runs `tsx server/server.ts`.
+- `npm test` runs unit and integration tests (TypeScript typecheck + PUBLIC build passed; 65 unit/integration passed; local end-to-end 15 passed; public end-to-end 1 comprehensive passed covering district fixture, prewritten field guide with 0 Muse calls, A900/B800 draft isolation + snapshots, clear + JSON import persist, and 390 mobile overflow). Latest recorded results: [source-provenance.json](source-provenance.json).
 - `npm run typecheck` runs `tsc --noEmit -p tsconfig.json` and `tsc --noEmit -p tsconfig.server.json`.
 - `npm run build` typechecks, builds the frontend, then emits `dist-server/server.js`.
-- `npm start` runs `node dist-server/server.js` on `127.0.0.1`.
-- Node `22.22.3` required: `vite@8.3.5`, `@vitejs/plugin-react@6.1.2`, `vitest@5.0.5`.
+- `npm run build:web` builds the PUBLIC-mode static frontend.
+- `npm run test:e2e` and `npm run test:e2e:public` cover local and public browser flows.
+- Commands: `npm test`, `npm run build:web`, `npm run test:e2e`, `npm run test:e2e:public`. `docs/ci-template.yml` is an inactive template.
+- Node `>=22.12.0` is required.
 - `vite.config.ts` imports `defineConfig` from `vitest/config` so the `test` field is valid.
 
-## Env
+## Environment setup
 
-`.env` is optional. If `.env` exists the server loads it with guarded `process.loadEnvFile`; values are never echoed. Required for live AI: `MODEL_API_KEY` or `MUSE_BIN` plus positive `MUSE_BUDGET_USD`. Optional: `MUSE_MAX_CALLS` (default `10`, strict positive integer), `MUSE_LEDGER_PATH` (must not be under public `dist/`), `PORT`, `KAKAO_REST_API_KEY`.
+`.env` is optional. Copy `.env.example` and leave values empty unless you intentionally enable a feature. Never commit keys.
 
-## Muse CLI
+- Fictional scene: no keys needed.
+- Live housing lookup: network only, no upstream secret currently needed.
+- Optional server geocoding: `KAKAO_REST_API_KEY`.
+- Optional browser map key: `VITE_KAKAO_JS_KEY`. Apply provider domain restrictions. In public mode the user confirms a real address manually and then opens official map links. No fake verified coordinates are created.
+- Optional local Muse assistant, actual `muse-spark-1.3` only, provider Meta fixed, no alternative fallback:
+  - `MODEL_API_KEY` or installed CLI path `MUSE_BIN`, plus positive `MUSE_BUDGET_USD`.
+  - Optional `MUSE_MAX_CALLS`, default `10`, strict positive integer.
+  - Private `MUSE_LEDGER_PATH`, default `./data/muse-ledger.json`, ignored by git, never under public `dist/`.
+  - Do not set a real paid cap for someone else. The example files use empty defaults, meaning disabled.
 
-Exact installed command, run with `execFile` (no shell), 120s timeout, 16MB `maxBuffer`, `MUSE_NO_AUTO_UPDATE=1`, safe temp prompt file removed afterwards:
+## What the assistant receives
+
+Only after the user presses the assistant action:
+
+Selected home identity, address or coordinates, its notes up to 60 plus visit memos up to 5, selected stop, priorities, and initial questions. Global visit notes and housing finances are not sent.
+
+Claims and evidence IDs in output are validated. Unknown fields are stripped. Nulls return errors rather than crashing. Model output is at most 3 questions ending in `?` or `？` with known evidence IDs. Status `Before AI connection...` returns a labelled `local-template` check, never a Muse answer. Configured status says `Muse configured · connection untested...`. Neither claims success until an actual model response is verified.
+
+## Muse CLI exact form
+
+Exact installed command, run with `execFile` without a shell, 120s timeout, 16MB `maxBuffer`, `MUSE_NO_AUTO_UPDATE=1`, safe temp prompt file removed afterwards:
 
 `muse exec --preset empty --provider meta --model muse-spark-1.3 --contributor-mode off --disable-shell --disable-write --disable-web-tools --disable-reminders --no-foreign-personal-context --approval-mode untrusted --approval-judge off --max-model-steps 1 --json --prompt-file PATH`
 
-`--preset empty` comes immediately after `exec` to withhold workspace file tools: the default CLI exposes `read_file` despite `--disable-shell`/`--disable-write`, so untrusted observation prompts must never cause workspace reads. No `--trust`/`--yolo`, no extra models, all other flags/approvals stay enabled. Existing CLI login is used; no auth token files are read. Only user-supplied session metadata is sent, with no default workspace extras under the empty preset.
+`--preset empty` comes immediately after `exec` to withhold workspace file tools. No `--trust` or `--yolo`, no extra models. Existing CLI login is used. No auth token files are read.
 
-Events use `payload_type`/`payload`. Success needs `run.model.configured` (`meta`/`muse-spark-1.3`), producer `stream_succeeded` for the same model, and `run.terminal.completed.text`. Only terminal text is parsed; reasoning deltas are ignored. `run.usage` input includes cached tokens; output already includes reasoning. Missing/malformed usage keeps the full reservation. Terminal `{"error":...}` still consumes known usage.
+Events use `payload_type` and `payload`. Success needs `run.model.configured` for `meta` and `muse-spark-1.3`, producer `stream_succeeded` for the same model, and `run.terminal.completed.text`. Only terminal text is parsed. Terminal `{"error":...}` still consumes known usage.
 
-## API transport
+## API transport and budget
 
-Native `fetch` only to fixed `https://api.meta.ai/v1/chat/completions`. Requires `response.model === muse-spark-1.3`, `prompt_tokens`/`completion_tokens`, cached from `prompt_tokens_details.cached_tokens` (`cached <= input`). System instructions are separate from untrusted session JSON. Responses prefer `response_format: { type: "json_object" }`, else exact `JSON.parse` with optional fences; greedy brace extraction is forbidden.
+Native `fetch` only to fixed `https://api.meta.ai/v1/chat/completions`. Requires `response.model === muse-spark-1.3`, `prompt_tokens` and `completion_tokens`, cached tokens from `prompt_tokens_details.cached_tokens`. Responses prefer `response_format: { type: "json_object" }`, otherwise exact `JSON.parse` with optional fences. Greedy brace extraction is forbidden.
 
-## Budget
-
-One action makes one model call. CLI reserves conservative `1.90 USD`; API reserves a byte-based input upper bound plus `600` output tokens. Actual cost is `(input-cached)*1.25+cached*0.15+output*4.25` per 1M; known usage is charged even when the answer is invalid. Missing usage retains the reservation. Over-reserve actuals are recorded and block later work. Corrupt/unreadable ledgers fail closed; only `ENOENT` initializes. Saves are atomic (temp write + rename). Keyword filtering does not guarantee factual safety.
-
-Ledger serialization covers one local Node process only. Concurrent processes can race the file and overspend; run one API process per ledger file.
-
-## Validation and status
-
-Sessions are strictly validated: 0-2 unique candidates, observations bound to known candidates, valid `activeCandidateId`/stop/source, priorities from 4 choices (max 3), bounded questions/strings, real booleans, ISO dates or null, `http(s)` URLs without credentials, 200KB cap. Unknown fields are stripped; nulls return errors instead of crashing. Model output is max 3 questions ending in `?`/`？` with known `evidenceIds`; any foreign id rejects that question. Status `AI 연결 전` returns a labelled `local-template` check, never a Muse answer; configured status says `구성됨 · 연결 미테스트`.
+One action makes one model call. CLI reserves conservative `1.90 USD`; API reserves a byte-based input upper bound plus `600` output tokens. Actual cost is `(input-cached)*1.25+cached*0.15+output*4.25` per 1M. Missing usage retains the reservation. Over-reserve actuals are recorded and block later work. Corrupt ledgers fail closed; only `ENOENT` initializes. Saves are atomic with temp write plus rename. Ledger serialization covers one local Node process only.
