@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+.env.local
+/data/
+*.log
+*.jsonl
+*.bundle
+.muse-log/
+*.pem
+*.key
+node_modules/
+dist/
+dist-server/
+playwright-report/
+test-results/
+coverage/
