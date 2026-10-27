@@ -14,4 +14,6 @@ dist/
 dist-server/
 playwright-report/
 test-results/
+test-results-public/
 coverage/
+.vercel

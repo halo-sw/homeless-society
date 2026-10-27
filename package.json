@@ -9,22 +9,28 @@
     "dev:client": "vite",
     "dev:server": "tsx server/server.ts",
     "build": "npm run typecheck && vite build && tsc -p tsconfig.server.json",
+    "build:web": "npm run typecheck && vite build --mode public",
+    "preview": "vite preview --host 127.0.0.1 --port 4173",
     "start": "node dist-server/server.js",
     "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.server.json",
     "test": "vitest run",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "test:e2e:public": "playwright test -c playwright.public.config.ts"
   },
   "dependencies": {
+    "@astryxdesign/core": "0.7.4",
+    "@astryxdesign/theme-neutral": "0.7.4",
+    "@stylexjs/stylex": "^0.19.0",
     "express": "^4.21.2",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@playwright/test": "^1.48.1",
     "@types/express": "^4.17.21",
     "@types/node": "^22.9.0",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
     "@vitejs/plugin-react": "^6.1.2",
     "concurrently": "^9.1.2",
     "tsx": "^4.19.2",

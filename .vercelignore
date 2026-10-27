@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+data/
+work/
+logs/
+node_modules/
+dist-server/
+*.log
+*.jsonl
+*.bundle
+.muse-log/
+coverage/
+playwright-report/
+test-results/
+test-results-public/

@@ -1,11 +1,11 @@
 export interface DemoEvidence { id: string; home: string; stop: string; title: string; body: string; sourceType: 'hypothetical' | 'provider'; date: string | null }
-export const DEMO_NOTE = '가상 예시: 솔안마을(가정)은 실존 지명이 아니며 모든 수치·상호는 가상의 관찰 주제입니다.';
-export const DEMO_HOMES = [{ id: 'demo-a', name: '해뜰집', desc: '가상 1순위 후보' }, { id: 'demo-b', name: '달빛집', desc: '가상 비교 후보' }];
+export const DEMO_NOTE = 'Fictional demo: Solan Village is an invented place. All names and figures are imaginary visit themes, not real data.';
+export const DEMO_HOMES = [{ id: 'demo-a', name: 'Sunlit House', desc: 'Fictional top pick' }, { id: 'demo-b', name: 'Moonlight House', desc: 'Fictional second pick' }];
 export const DEMO_EVIDENCE: DemoEvidence[] = [
-  { id: 'ev-a1', home: 'demo-a', stop: 'around', title: '가상 골목 관찰 주제', body: '저녁 골목등 간격과 보행로 단차를 직접 확인할 주제.', sourceType: 'hypothetical', date: null },
-  { id: 'ev-a2', home: 'demo-a', stop: 'route', title: '가상 생활동선 주제', body: '가정 역까지 도보 동선과 장보기 지점을 확인할 주제.', sourceType: 'hypothetical', date: null },
-  { id: 'ev-a3', home: 'demo-a', stop: 'entrance', title: '가상 현관 관찰 주제', body: '현관 잠금·우편함·분리수거 위치를 확인할 주제.', sourceType: 'hypothetical', date: null },
-  { id: 'ev-b1', home: 'demo-b', stop: 'around', title: '가상 비교 관찰 주제', body: '달빛집 주변 밤 밝기 비교 관찰 주제.', sourceType: 'hypothetical', date: null },
-  { id: 'ev-b2', home: 'demo-b', stop: 'route', title: '가상 버스동선 주제', body: '버스 정류장까지 경사와 횡단보도 확인 주제.', sourceType: 'hypothetical', date: null },
-  { id: 'ev-b3', home: 'demo-b', stop: 'entrance', title: '가상 건물입구 주제', body: '계단·엘리베이터 유무 확인 주제.', sourceType: 'hypothetical', date: null }
+  { id: 'ev-a1', home: 'demo-a', stop: 'around', title: 'Fictional alley theme', body: 'Check lamp spacing and sidewalk edges yourself on this theme.', sourceType: 'hypothetical', date: null },
+  { id: 'ev-a2', home: 'demo-a', stop: 'route', title: 'Fictional daily-route theme', body: 'Theme for the assumed walk to the station and grocery stops.', sourceType: 'hypothetical', date: null },
+  { id: 'ev-a3', home: 'demo-a', stop: 'entrance', title: 'Fictional entry theme', body: 'Theme for locks, mailboxes, and the recycling corner.', sourceType: 'hypothetical', date: null },
+  { id: 'ev-b1', home: 'demo-b', stop: 'around', title: 'Fictional comparison theme', body: 'Evening-brightness comparison theme for Moonlight House.', sourceType: 'hypothetical', date: null },
+  { id: 'ev-b2', home: 'demo-b', stop: 'route', title: 'Fictional bus-route theme', body: 'Theme for the slope and crossing toward the bus stop.', sourceType: 'hypothetical', date: null },
+  { id: 'ev-b3', home: 'demo-b', stop: 'entrance', title: 'Fictional building-entry theme', body: 'Theme for stairs and lift presence.', sourceType: 'hypothetical', date: null }
 ];
