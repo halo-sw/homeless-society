@@ -1,7 +1,7 @@
 {
   "model": "muse-spark-1.3",
   "checkedAt": "2026-10-27 Asia/Seoul",
-  "method": "Exact byte comparison against terminal file bundles; envelope/path metadata normalized only. npm generated package-lock.json. Codex orchestrated, reviewed and tested. CI template relocated without changing contents; original unpublished commits retained on local/with-ci-workflow.",
+  "method": "Exact byte comparison against Muse terminal file bundles and exact Muse-authored replacements; envelope/path metadata normalized only. npm generated package-lock.json. Codex orchestrated, reviewed, materialized, tested and ran Git. CI template relocated without changing contents; original unpublished commits retained on local/with-ci-workflow.",
   "sourceFiles": [
     {
       "path": ".env.example",
@@ -17,12 +17,6 @@
       "path": ".github/pull_request_template.md",
       "museBatch": "01",
       "sha256": "a2474099ae7cacde1e48db4a2c2ec1c94657b4ae5abcf3017c9fc12e4ebd37d1"
-    },
-    {
-      "path": "docs/ci-template.yml",
-      "museBatch": "07",
-      "sha256": "c51c94e66ce2aea40ff8ef48fdfe2184099ca9bdee3604fbc8c143194bac7090",
-      "originalMusePath": ".github/workflows/ci.yml"
     },
     {
       "path": ".gitignore",
@@ -41,8 +35,8 @@
     },
     {
       "path": "CONTRIBUTING.md",
-      "museBatch": "01",
-      "sha256": "b535da267aabec8c2922245dccf8acf7ed2639f1e6b32435ecb06792f4f4dbbb"
+      "museBatch": "14",
+      "sha256": "ef5c1cd952d4e6d9901c023463208ea20254ad7a4be695e70276e11fb30e6e07"
     },
     {
       "path": "LICENSE",
@@ -50,14 +44,19 @@
       "sha256": "bb2e846f33ca3f737fd0f6823665515cbca4057cf4865ecd733ea1744ab69200"
     },
     {
+      "path": "README.en.md",
+      "museBatch": "13",
+      "sha256": "fd010acac529f896fb215ac926b181caeb955f0b9e024b926a4dc038838cd9a8"
+    },
+    {
       "path": "README.ko.md",
-      "museBatch": "06",
-      "sha256": "66389eee1e7880e0ccb633ad987bac0464ab7ce9ff7f5bd33773f97d91511b1b"
+      "museBatch": "13",
+      "sha256": "dc3ca9fc2e4846a91fbd5fb53b0b790417ebcfb6d2bd617984459335a543f9ac"
     },
     {
       "path": "README.md",
-      "museBatch": "06",
-      "sha256": "5d7d43e4d070b3c99dc4df553a250488333d74b71657e249a150d99b1760dfe8"
+      "museBatch": "14",
+      "sha256": "df9f7696aa84eae8ab5e5f5911643fec09a1ad919010dfc8d9507020b86577a5"
     },
     {
       "path": "SECURITY.md",
@@ -70,6 +69,11 @@
       "sha256": "5325b108e01a683d12a73f78d6b0489c85f1036bd849b63c618e840a0cd2aeed"
     },
     {
+      "path": "docs/GETTING_STARTED.ko.md",
+      "museBatch": "14",
+      "sha256": "9963bc34e658dfb1d48e369d5e995be3acc01935b386e0fb0959a64229bd2d51"
+    },
+    {
       "path": "docs/PROVENANCE.md",
       "museBatch": "06",
       "sha256": "e783a96c03d712a961d9aecb93f08af82b0df0521cc6fdea85b3b4a02137c641"
@@ -78,6 +82,12 @@
       "path": "docs/architecture.md",
       "museBatch": "11",
       "sha256": "54c33835f92c01c584d95a91d74b9dcf7593692baadf96377fc6ce154b2301f8"
+    },
+    {
+      "path": "docs/ci-template.yml",
+      "museBatch": "07",
+      "sha256": "c51c94e66ce2aea40ff8ef48fdfe2184099ca9bdee3604fbc8c143194bac7090",
+      "originalMusePath": ".github/workflows/ci.yml"
     },
     {
       "path": "docs/data-sources.md",
@@ -401,9 +411,59 @@
       ],
       "estimatedUsd": 0.0261425,
       "applied": true
+    },
+    {
+      "batch": "12",
+      "model": "muse-spark-1.3",
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 20286,
+          "cached_tokens": 0,
+          "output_tokens": 6811,
+          "reasoning_tokens": 319,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.05430425,
+      "applied": false,
+      "note": "Documentation draft superseded by batch 13; missing outer JSON brace normalized only."
+    },
+    {
+      "batch": "13",
+      "model": "muse-spark-1.3",
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 25091,
+          "cached_tokens": 0,
+          "output_tokens": 11480,
+          "reasoning_tokens": 3633,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.08015375,
+      "applied": true
+    },
+    {
+      "batch": "14",
+      "model": "muse-spark-1.3",
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 24042,
+          "cached_tokens": 0,
+          "output_tokens": 6387,
+          "reasoning_tokens": 4617,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.05719725,
+      "applied": true,
+      "note": "Exact Muse-authored replacements applied to batch 13 documents; full derived bundles preserved privately."
     }
   ],
-  "estimatedAuthoringUsd": 1.65755875,
+  "estimatedAuthoringUsd": 1.849214,
   "checks": {
     "build": "passed",
     "unitIntegrationTests": 45,
@@ -414,5 +474,33 @@
     "Kakao real-provider map/roadview not exercised without provider keys.",
     "Satisfaction 9/10 is a design goal, not measured satisfaction.",
     "GitHub OAuth login lacks workflow scope. CI configuration is included as an inactive docs/ci-template.yml; local checks passed, GitHub Actions not activated."
-  ]
+  ],
+  "capturedAssets": [
+    {
+      "path": "docs/images/prepare.png",
+      "kind": "browser-screenshot",
+      "description": "Unedited screenshot of the fictional app demo, not real street view.",
+      "sha256": "1d7229b551be23e9dd257ce775df0390b20504e58ebd32acc9e38eace549d7c1"
+    },
+    {
+      "path": "docs/images/virtual-visit.png",
+      "kind": "browser-screenshot",
+      "description": "Unedited screenshot of the fictional app demo, not real street view.",
+      "sha256": "94584fbcb1996e4dbcd37854dafd03e6bb23af46cbe5baa8c7a22bef8c818c19"
+    },
+    {
+      "path": "docs/images/compare.png",
+      "kind": "browser-screenshot",
+      "description": "Unedited screenshot of the fictional app demo, not real street view.",
+      "sha256": "ab4d729544b5d1e103c9641cadcf9e6be05dd24c6268db5d7f4154fdbf5f2779"
+    }
+  ],
+  "documentationChecks": {
+    "checkedAt": "2026-10-27 Asia/Seoul",
+    "documents": 5,
+    "relativeLinksAndImages": 47,
+    "originalScreenshots": 3,
+    "applicationSourcesUnchanged": true,
+    "testSuiteRerun": false
+  }
 }
