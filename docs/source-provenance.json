@@ -1,0 +1,402 @@
+{
+  "model": "muse-spark-1.3",
+  "checkedAt": "2026-10-27 Asia/Seoul",
+  "method": "Exact byte comparison against terminal file bundles; envelope/path metadata normalized only. npm generated package-lock.json. Codex orchestrated, reviewed and tested. CI template relocated without changing contents; original unpublished commits retained on local/with-ci-workflow.",
+  "sourceFiles": [
+    {
+      "path": ".env.example",
+      "museBatch": "02",
+      "sha256": "ac706f7abfa6938ef69f7f205308a321ce7d4b92d45e1e56e6e0910a26ee6848"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug.md",
+      "museBatch": "01",
+      "sha256": "0cb0de1c5321938e90f93ce3cab12e463fa1f54b477331875f6566b39e291666"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "museBatch": "01",
+      "sha256": "a2474099ae7cacde1e48db4a2c2ec1c94657b4ae5abcf3017c9fc12e4ebd37d1"
+    },
+    {
+      "path": "docs/ci-template.yml",
+      "museBatch": "07",
+      "sha256": "c51c94e66ce2aea40ff8ef48fdfe2184099ca9bdee3604fbc8c143194bac7090",
+      "originalMusePath": ".github/workflows/ci.yml"
+    },
+    {
+      "path": ".gitignore",
+      "museBatch": "10",
+      "sha256": "c166592309fdc6bd7d43a44dc0a518daff6b1236b29b0200d3214567b7b319fd"
+    },
+    {
+      "path": ".impeccable.md",
+      "museBatch": "01",
+      "sha256": "44e2a1a026d7978b40acf26a84472e5e158165d6a8fb197b50d76bb91b03ba8d"
+    },
+    {
+      "path": "AGENTS.md",
+      "museBatch": "01",
+      "sha256": "8c011c15cca602c6cc7f6c63dee3c02e2b8e841d1fbcd65cbf1909b6148a719f"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "museBatch": "01",
+      "sha256": "b535da267aabec8c2922245dccf8acf7ed2639f1e6b32435ecb06792f4f4dbbb"
+    },
+    {
+      "path": "LICENSE",
+      "museBatch": "01",
+      "sha256": "bb2e846f33ca3f737fd0f6823665515cbca4057cf4865ecd733ea1744ab69200"
+    },
+    {
+      "path": "README.ko.md",
+      "museBatch": "06",
+      "sha256": "66389eee1e7880e0ccb633ad987bac0464ab7ce9ff7f5bd33773f97d91511b1b"
+    },
+    {
+      "path": "README.md",
+      "museBatch": "06",
+      "sha256": "5d7d43e4d070b3c99dc4df553a250488333d74b71657e249a150d99b1760dfe8"
+    },
+    {
+      "path": "SECURITY.md",
+      "museBatch": "01",
+      "sha256": "b2a15d2442aede618b0f22a4e277a9b42394c9ca6351fd49c08d65dc934910ce"
+    },
+    {
+      "path": "docs/BACKEND.md",
+      "museBatch": "07",
+      "sha256": "5325b108e01a683d12a73f78d6b0489c85f1036bd849b63c618e840a0cd2aeed"
+    },
+    {
+      "path": "docs/PROVENANCE.md",
+      "museBatch": "06",
+      "sha256": "e783a96c03d712a961d9aecb93f08af82b0df0521cc6fdea85b3b4a02137c641"
+    },
+    {
+      "path": "docs/architecture.md",
+      "museBatch": "01",
+      "sha256": "ed96d92eba0ee570dcc3595e6ccb1d1f197ef81099a18a4e5685d1cb090a291f"
+    },
+    {
+      "path": "docs/data-sources.md",
+      "museBatch": "01",
+      "sha256": "80e5355f92f2a8d815b2ed6cfe35260e38983d4e5f1e770854461cd800b97d7d"
+    },
+    {
+      "path": "index.html",
+      "museBatch": "01",
+      "sha256": "449a67cd4bebc36b6413670365f12f8781214e64ac23e4324b5dd8795ff360dd"
+    },
+    {
+      "path": "package.json",
+      "museBatch": "02",
+      "sha256": "c547b717804a8b8685dbe563a2aac0c861c9139a0fdcfcfe04fb0be5d67e7d88"
+    },
+    {
+      "path": "playwright.config.ts",
+      "museBatch": "07",
+      "sha256": "6dfc5cf25e1ad2f32f6b0fedf9b9913e9b8b16f21ac754d1e789fbd130aadeca"
+    },
+    {
+      "path": "public/assets/favicon.svg",
+      "museBatch": "01",
+      "sha256": "5e824006b52b7573024d280f40d9b8a145b4fb43a088306a6d46043636f2dc01"
+    },
+    {
+      "path": "server/budget.ts",
+      "museBatch": "04",
+      "sha256": "0b8ff70663d898102818802c892f8441575c46cdbc2378557289589e0d06e1e9"
+    },
+    {
+      "path": "server/muse.ts",
+      "museBatch": "07",
+      "sha256": "6a14f4473190262713165ffb6d0fe54a02e8dcc315f70cb431961729699bf747"
+    },
+    {
+      "path": "server/server.ts",
+      "museBatch": "06",
+      "sha256": "e35a5ace205f646d5c7a67d603129e548ebe999ca00460136fbb9484aacf23ff"
+    },
+    {
+      "path": "server/sessionValidate.ts",
+      "museBatch": "04",
+      "sha256": "57d3e7cf8c684b8faadeff76af080b001cc1bd990aa4bd4972744930f4814cf7"
+    },
+    {
+      "path": "src/App.tsx",
+      "museBatch": "07",
+      "sha256": "b7654f7c3c483f5a2fe2a5241340aff9a13c5d2a1fa92e9295111531b26b8546"
+    },
+    {
+      "path": "src/components/MapView.tsx",
+      "museBatch": "06",
+      "sha256": "3194f5ee7ffa91a28c485ffa8a5904c72fb5614347b63af0dc47062ec26bfc1e"
+    },
+    {
+      "path": "src/components/MusePanel.tsx",
+      "museBatch": "07",
+      "sha256": "9a3c81f138a1d2a04e25575bfbbdaa309640f23fa85217fa579074a98ea44b64"
+    },
+    {
+      "path": "src/components/Prep.tsx",
+      "museBatch": "07",
+      "sha256": "0dfdde14a3559bf0f4f49cd95180199e2376420e1fc4226e06f0cd3315fdc468"
+    },
+    {
+      "path": "src/components/SessionImport.tsx",
+      "museBatch": "07",
+      "sha256": "4adb59bbdaf5e59fb6b9a563e3ef7dd38e2cddcef03c2cb8e9c0336e37e8838b"
+    },
+    {
+      "path": "src/components/Summary.tsx",
+      "museBatch": "09",
+      "sha256": "09d065ce7f2aaa8af23788ccb5ea6f9efaa74cdab632808ca40aa934bb123e9c"
+    },
+    {
+      "path": "src/components/Visit.tsx",
+      "museBatch": "06",
+      "sha256": "078a095ce101ff43d58eb884945f03f46b372595486d663141bd507d78033c81"
+    },
+    {
+      "path": "src/data/demo.ts",
+      "museBatch": "03",
+      "sha256": "befa9a956ad3cbe3cf93c1397b54c9538c8877cefa836feffc798fd3769b977f"
+    },
+    {
+      "path": "src/domain/session.ts",
+      "museBatch": "06",
+      "sha256": "b22c6a21cc260c58470252a0edaf2f4ba8a495f1ecb70ee632305bfde2878e52"
+    },
+    {
+      "path": "src/main.tsx",
+      "museBatch": "01",
+      "sha256": "6c4b44f0162d920a4772d3f2836d5e66bcb53c26365bda98719e0b929f067339"
+    },
+    {
+      "path": "src/styles/app.css",
+      "museBatch": "07",
+      "sha256": "819c869972ca0555cf6ff4d6d2199fe42ac393a74f03bc3b1f5ffcabf3315b3b"
+    },
+    {
+      "path": "tests/budget.test.ts",
+      "museBatch": "04",
+      "sha256": "6be920ea6726187edf9fc0e651cf10b7bf842c2f4adfd09260bc92ac6fc5c9ce"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "museBatch": "08",
+      "sha256": "113fbbe5213e0891049b61c57519f101124b285ec01d47491eab7acda369ecaf"
+    },
+    {
+      "path": "tests/muse.test.ts",
+      "museBatch": "07",
+      "sha256": "dbbd739c5837e1bd33698e91cd5192fcea464266a0b06f317dc8a17465046699"
+    },
+    {
+      "path": "tests/server.test.ts",
+      "museBatch": "04",
+      "sha256": "de8ea1bcd77132f497ea9cc694fd65e95b73db7e5a6611020aa102e4bae77263"
+    },
+    {
+      "path": "tests/session.test.ts",
+      "museBatch": "04",
+      "sha256": "86fc0e78b62f0afb6bfa6283ae15e5204ca62afdb86a938e0d6b444b722ce885"
+    },
+    {
+      "path": "tests/sessionValidate.test.ts",
+      "museBatch": "04",
+      "sha256": "4be869a5ec072a3f1a0804d19df9c7f7ca69a27866fdbf5668ef4d91360ed523"
+    },
+    {
+      "path": "tsconfig.json",
+      "museBatch": "02",
+      "sha256": "d52d07e1b7150a7ca7ca532c7641e494b648ea9f3e206ac179a2f1d169c7f7f1"
+    },
+    {
+      "path": "tsconfig.server.json",
+      "museBatch": "02",
+      "sha256": "a543c29820afe085ea2ed3f48de891442766d36fc57b64c63ef09a3df5d493d5"
+    },
+    {
+      "path": "vite.config.ts",
+      "museBatch": "02",
+      "sha256": "717d3db2ff9122e7e3e394922cf95a257515cde429a39733b7911f181d252767"
+    }
+  ],
+  "batches": [
+    {
+      "batch": "01",
+      "model": "muse-spark-1.3",
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 29069,
+          "cached_tokens": 0,
+          "output_tokens": 25674,
+          "reasoning_tokens": 4923,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.14545075,
+      "applied": true
+    },
+    {
+      "batch": "02",
+      "model": "muse-spark-1.3",
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 33003,
+          "cached_tokens": 0,
+          "output_tokens": 41005,
+          "reasoning_tokens": 21432,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.215525,
+      "applied": true
+    },
+    {
+      "batch": "03",
+      "model": "muse-spark-1.3",
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 39411,
+          "cached_tokens": 0,
+          "output_tokens": 46842,
+          "reasoning_tokens": 21301,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.24834225,
+      "applied": true
+    },
+    {
+      "batch": "04",
+      "model": "muse-spark-1.3",
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 51181,
+          "cached_tokens": 0,
+          "output_tokens": 43568,
+          "reasoning_tokens": 8445,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.24914025,
+      "applied": true
+    },
+    {
+      "batch": "05",
+      "model": "muse-spark-1.3",
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 52687,
+          "cached_tokens": 0,
+          "output_tokens": 5651,
+          "reasoning_tokens": 5315,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.0898755,
+      "applied": false
+    },
+    {
+      "batch": "06",
+      "model": "muse-spark-1.3",
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 51180,
+          "cached_tokens": 0,
+          "output_tokens": 57859,
+          "reasoning_tokens": 21596,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.30987575,
+      "applied": true
+    },
+    {
+      "batch": "07",
+      "model": "muse-spark-1.3",
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 44294,
+          "cached_tokens": 0,
+          "output_tokens": 45920,
+          "reasoning_tokens": 16245,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.2505275,
+      "applied": true
+    },
+    {
+      "batch": "08",
+      "model": "muse-spark-1.3",
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 21468,
+          "cached_tokens": 0,
+          "output_tokens": 7324,
+          "reasoning_tokens": 3212,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.057962,
+      "applied": true
+    },
+    {
+      "batch": "09",
+      "model": "muse-spark-1.3",
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 20674,
+          "cached_tokens": 0,
+          "output_tokens": 3550,
+          "reasoning_tokens": 556,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.04093,
+      "applied": true
+    },
+    {
+      "batch": "10",
+      "model": "muse-spark-1.3",
+      "usage": [
+        {
+          "model": "muse-spark-1.3",
+          "input_tokens": 17833,
+          "cached_tokens": 0,
+          "output_tokens": 352,
+          "reasoning_tokens": 267,
+          "calls": 1
+        }
+      ],
+      "estimatedUsd": 0.02378725,
+      "applied": true
+    }
+  ],
+  "estimatedAuthoringUsd": 1.63141625,
+  "checks": {
+    "build": "passed",
+    "unitIntegrationTests": 45,
+    "browserTests": 11,
+    "npmKnownVulnerabilities": 0
+  },
+  "limitations": [
+    "Kakao real-provider map/roadview not exercised without provider keys.",
+    "Satisfaction 9/10 is a design goal, not measured satisfaction.",
+    "GitHub OAuth login lacks workflow scope. CI configuration is included as an inactive docs/ci-template.yml; local checks passed, GitHub Actions not activated."
+  ]
+}
